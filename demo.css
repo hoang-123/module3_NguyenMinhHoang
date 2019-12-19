@@ -1,0 +1,25 @@
+.container {
+    display: grid;
+    border:1px solid #ddd;
+
+    grid-template:
+            [row1-start] "header header header" 100px [row1-end]
+            [row2-start] "main main ." 50px [row2-end]
+            [row3-start] "footer footer footer" 50px [row3-end]
+
+        / 150px auto 120px;
+}
+
+/* Same As: */
+
+.container2 {
+    display: grid;
+    border:1px solid #ddd;
+
+    grid-template-rows: [row1-start] 100px [row1-end row2-start] 50px [row2-end row3-start] 50px [row3-end];
+    grid-template-columns: 150px auto 120px;
+    grid-template-areas:
+            "header header header"
+            "main main ."
+            "footer footer footer";
+}

@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+}
+#header{
+     background: url("img/123.jpg");
+     height: 100px;
+     width: 80%;
+     float: left;
+ }
+
+#logo{
+    background: url("img/logo.jpg");
+    height: 100px;
+    width: 20%;
+    float: left;
+}
+
+#head-link{
+    background: crimson;
+    height: 30px;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.main{
+    background: yellow;
+    height: 400px;
+    width: 80%;
+    float: left;
+    display: grid;
+    grid-template-rows: 350px 100px;
+    grid-template-columns: 200px 80%auto;
+    border:1px solid #ddd;
+}
+.child{
+    padding: 5px;
+    background: url("img/Cyber-Wukong.jpg");
+    height: 380px;
+    margin: 5px;
+    display: grid;
+    grid-template-rows: 120px 120px 120px;
+    grid-template-columns: 100%;
+    border:1px solid #ddd;
+}
+.child1{
+    padding: 5px;
+    background: #3399ff;
+    margin: 5px;
+}
+
+
+#sidebar{
+    background: crimson;
+    height: 400px;
+    width: 20%;
+    float: left;
+}
+#footer{
+    background: chartreuse;
+    height: 80px;
+    width: 100%;
+    clear: both;
+}
