@@ -12,7 +12,7 @@ export class DictionaryPageComponent implements OnInit {
   listWord: IWord[] = [];
   constructor(
     private dictionaryService: DictionaryService,
-    private authService: AuthService
+    public authService: AuthService
     ) { }
 
   ngOnInit() {

@@ -28,8 +28,7 @@ const routes: Routes = [
   children: [
     {
       path: ':key',
-      component: DictionaryDetailComponent,
-      canActivate: [AuthGuard]
+      component: DictionaryDetailComponent
     }
   ]
 }

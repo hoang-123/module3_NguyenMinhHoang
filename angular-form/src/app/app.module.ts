@@ -15,6 +15,7 @@ import { YoutubePlayerComponent } from './youtube-player/youtube-player.componen
 import { DictionaryComponent } from './dictionary/dictionary.component';
 import { DictionaryDetailComponent } from './dictionary-detail/dictionary-detail.component';
 import { DictionaryPageComponent } from './dictionary-page/dictionary-page.component';
+import { DictionaryService } from 'src/dictionary.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { DictionaryPageComponent } from './dictionary-page/dictionary-page.compo
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [DictionaryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
