@@ -13,6 +13,10 @@ import {NgxPaginationModule} from 'ngx-pagination';
 import { ListDvComponent } from './components/dichVu/list-dv/list-dv.component';
 import { CreateDvComponent } from './components/dichVu/create-dv/create-dv.component';
 import { EditDvComponent } from './components/dichVu/edit-dv/edit-dv.component';
+import { ListHDComponent } from './components/hopDong/list-hd/list-hd.component';
+import { CreateHDComponent } from './components/hopDong/create-hd/create-hd.component';
+import { ListNVComponent } from './components/nhanVien/list-nv/list-nv.component';
+import { CreateNVComponent } from './components/nhanVien/create-nv/create-nv.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { EditDvComponent } from './components/dichVu/edit-dv/edit-dv.component';
     ListCusComponent,
     ListDvComponent,
     CreateDvComponent,
-    EditDvComponent
+    EditDvComponent,
+    ListHDComponent,
+    CreateHDComponent,
+    ListNVComponent,
+    CreateNVComponent
   ],
   imports: [
     BrowserModule,

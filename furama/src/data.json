@@ -2,6 +2,7 @@
   "customer": [
     {
       "id": 1,
+      "maKH": "KH-0001",
       "hoTen": "Hoang",
       "ngaySinh": "12/02/1994",
       "soCM": "197309565",
@@ -10,6 +11,7 @@
       "diaChi": "Quang Tri"
     },
     {
+      "maKH": "KH-0001",
       "hoTen": "nguyen",
       "ngaySinh": "2019-11-07",
       "soCM": "123456798",
@@ -19,6 +21,7 @@
       "id": 2
     },
     {
+      "maKH": "KH-0001",
       "hoTen": "ssss",
       "ngaySinh": "2019-12-31",
       "soCM": "123467989",
@@ -26,26 +29,38 @@
       "email": "hoang@gmail.com",
       "diaChi": "sssssss",
       "id": 3
+    },
+    {
+      "maKH": "KH-0005",
+      "hoTen": "Nguyen",
+      "ngaySinh": "2020-01-09",
+      "soCM": "112345655",
+      "soDT": "+84033380601",
+      "email": "hoang@gmail.com",
+      "diaChi": "asdasdsadsada",
+      "id": 4
     }
   ],
   "employee": [
     {
-      "id": "",
-      "hoTen": "",
-      "viTri": "",
-      "trinhDo": "",
-      "boPhan": "",
-      "ngaySinh": "",
-      "soCM": "",
-      "luong": "",
-      "soDT": "",
-      "email": "",
-      "diaChi": ""
+      "id": "1",
+      "maNV": "NV-1234",
+      "hoTen": "Nguyen",
+      "viTri": "Bep turong",
+      "trinhDo": "cao dang",
+      "boPhan": "Phuc vu",
+      "ngaySinh": "14/12/2003",
+      "soCM": "123456789",
+      "luong": "987654321",
+      "soDT": "565422123",
+      "email": "aaaa@mail.com",
+      "diaChi": "here"
     }
   ],
   "service": [
     {
       "id": "1",
+      "maDV": "DV-0001",
       "tenDV": "Villa ",
       "dienTich": "25",
       "soTang": "5",
@@ -53,6 +68,50 @@
       "chiPhiThue": "100",
       "kieuThue": "day",
       "trangThai": "empty"
+    }
+  ],
+  "contract": [
+    {
+      "id": "1",
+      "employee": {
+        "id": "1",
+        "maNV": "NV-0002",
+        "hoTen": "Minh",
+        "viTri": "Truong phong",
+        "trinhDo": "Dai Hoc",
+        "boPhan": "Nha Bep",
+        "ngaySinh": "12/08/2001",
+        "soCM": "111111111",
+        "luong": "500000",
+        "soDT": "0123123123",
+        "email": "mail@gmail.com",
+        "diaChi": "Da nang"
+      },
+      "customer": {
+        "maKH": "KH-0001",
+        "hoTen": "nguyen",
+        "ngaySinh": "2019-11-07",
+        "soCM": "123456798",
+        "soDT": "01633816012",
+        "email": "adasdasdasd",
+        "diaChi": "hue",
+        "id": 2
+      },
+      "service": {
+        "id": "1",
+        "maDV": "DV-0001",
+        "tenDV": "Villa ",
+        "dienTich": "25",
+        "soTang": "5",
+        "soNguoiToiDa": "10",
+        "chiPhiThue": "100",
+        "kieuThue": "day",
+        "trangThai": "empty"
+      },
+      "ngayLam": "2019-11-03",
+      "ngayHet": "2019-11-07",
+      "tienDatCoc": "100",
+      "tongTien": "5000000"
     }
   ]
 }

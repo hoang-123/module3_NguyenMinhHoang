@@ -1,5 +1,6 @@
 export class Service {
   id: number;
+  maDV: string;
   tenDV: string;
   dienTich: number;
   soTang: number;
@@ -8,7 +9,9 @@ export class Service {
   kieuThue: string;
   trangThai: string;
 
-  constructor(id, tenDV, dienTich, soTang, soNguoiToiDa, chiPhiThue, kieuThue, trangThai) {
+  constructor(id, tenDV, maDV, dienTich, soTang, soNguoiToiDa, chiPhiThue, kieuThue, trangThai) {
+      this.id = id;
+      this.maDV = maDV;
       this.tenDV = tenDV;
       this.dienTich = dienTich;
       this.soTang = soTang;

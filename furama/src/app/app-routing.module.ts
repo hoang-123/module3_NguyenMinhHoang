@@ -6,6 +6,8 @@ import { EditCusComponent } from './components/khachHang/edit-cus/edit-cus.compo
 import { ListDvComponent } from './components/dichVu/list-dv/list-dv.component';
 import { CreateDvComponent } from './components/dichVu/create-dv/create-dv.component';
 import { EditDvComponent } from './components/dichVu/edit-dv/edit-dv.component';
+import { ListNVComponent } from './components/nhanVien/list-nv/list-nv.component';
+import { ListHDComponent } from './components/hopDong/list-hd/list-hd.component';
 
 
 const routes: Routes = [
@@ -32,6 +34,14 @@ const routes: Routes = [
   , {
     path: 'service/edit/:id',
     component: EditDvComponent
+  }
+  , {
+    path: 'employee/list',
+    component: ListNVComponent
+  }
+  , {
+    path: 'contract/list',
+    component: ListHDComponent
   }
 ];
 

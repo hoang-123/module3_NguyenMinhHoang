@@ -27,15 +27,8 @@ export class CreateCusComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    // this.customerForm = this.fb.group({
-    //   hoTen: ['', [Validators.required, Validators.pattern('^([\\p{Lu}]|[\\p{Lu}]\\p{Ll}]{1,})((\\s)([\\p{Lu}]|[\\p{Lu}][\\p{Ll}]{1,10})){0,6}$')]],
-    //   ngaySinh: ['', [Validators.required]],
-    //   soCM: ['', [Validators.required, Validators.pattern(/^[1-9][\d]{8}$/)]],
-    //   soDT: ['', [Validators.required, Validators.pattern('^(+84)[\\d]{9,10}$')]],
-    //   email: ['', [Validators.required, Validators.pattern('^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$')]],
-    //   diaChi: ['', [Validators.required]]
-    // });
     this.customerForm = this.fb.group({
+      maKH: ['', [Validators.required, Validators.pattern(/^(KH)[-][\d]{4}$/)]],
       hoTen: ['', [Validators.required]],
       ngaySinh: ['', [Validators.required]],
       soCM: ['', [Validators.required, Validators.pattern(/^[1-9][\d]{8}$/)]],

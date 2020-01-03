@@ -27,6 +27,7 @@ export class EditDvComponent implements OnInit {
 
   ngOnInit() {
     this.dvForm = this.fb.group({
+      maDV: ['', [Validators.required, Validators.pattern('^(DV)[-][\\d]{4}$')]],
       tenDV: ['', [Validators.required]],
       dienTich: ['', [Validators.required]],
       soTang: ['', [Validators.required]],

@@ -1,0 +1,47 @@
+<p>list-nv works!</p>
+<div class="container">
+  <a class="btn btn-success" routerLink="/employee/create">Create</a><br>
+  <div>
+    <input type="text" placeholder="search" [(ngModel)]="keyword" name="keyword"/>
+    <!-- <button (click)="Search()" >Search</button> -->
+  </div>
+  <table class="table table-danger">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Vi Tri</th>
+      <th>Trinh Do</th>
+      <th>Bo Phan</th>
+      <th>Ngay Sinh</th>
+      <th>So CM</th>
+      <th>Ation</th>
+    </tr>
+    <tr *ngFor="let c of employeeList | filter:keyword| paginate: { itemsPerPage: 5, currentPage: p }, index as i">
+      <td>
+        {{c.maNV}}
+      </td>
+      <td>
+        {{c.hoTen}}
+      </td>
+      <td>
+        {{c.viTri}}
+      </td>
+      <td>
+        {{c.trinhDo}}
+      </td>
+      <td>
+        {{c.boPhan}}
+      </td>
+      <td>
+        {{c.ngaySinh}}
+      </td>
+      <td>
+        {{c.soCM}}
+      </td>
+      <td><button class="btn btn-success" (click)="deleteEmployee(i)">delete</button></td>
+      <td><a class="btn btn-primary" [routerLink]="['/employee/edit', c.id]">edit</a></td>
+      <router-outlet></router-outlet>
+    </tr>
+  </table>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>

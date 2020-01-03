@@ -17,7 +17,7 @@
     </tr>
     <tr *ngFor="let dv of dvList | filter:keyword| paginate: { itemsPerPage: 5, currentPage: p }, index as i">
       <td>
-        {{dv.id}}
+        {{dv.maDV}}
       </td>
       <td>
         {{dv.tenDV}}

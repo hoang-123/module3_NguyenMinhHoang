@@ -1,6 +1,17 @@
 <h2>Customer</h2>
 <form [formGroup]="customerForm" (ngSubmit)="onSubmit()">
-    <div>
+  <div>
+    <label>
+      MA-KH
+        <br>
+        <input type="text" placeholder="KH-xxxx" formControlName="maKH">
+    </label>
+</div>
+<div *ngIf="customerForm.get('maKH').invalid && customerForm.get('maKH').touched" style="color: red">
+  <span *ngIf="customerForm.get('maKH').hasError('required')">MA-KH is required</span>
+  <span *ngIf="customerForm.get('maKH').hasError('pattern')">Try again</span>
+</div>
+  <div>
         <label>
           Name
             <br>
@@ -8,8 +19,8 @@
         </label>
     </div>
     <div *ngIf="customerForm.get('hoTen').invalid && customerForm.get('hoTen').touched" style="color: red">
-      <span *ngIf="customerForm.get('soCM').hasError('required')">Name is required</span>
-      <span *ngIf="customerForm.get('soCM').hasError('pattern')">Try again</span>
+      <span *ngIf="customerForm.get('hoTen').hasError('required')">Name is required</span>
+      <span *ngIf="customerForm.get('hoTen').hasError('pattern')">Try again</span>
     </div>
     <div>
         <label>
@@ -18,7 +29,8 @@
             <input type="date" formControlName="ngaySinh">
         </label>
     </div>
-    <!-- <div *ngIf="customerForm.get('ngaySinh').invalid && customerForm.get('ngaySinh').touched" style="color: red"></div> -->
+    <div *ngIf="customerForm.get('ngaySinh').invalid && customerForm.get('ngaySinh').touched" style="color: red">
+    </div>
     <div>
       <label>
         Id Card

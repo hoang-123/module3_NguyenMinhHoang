@@ -1,5 +1,16 @@
 <h2>Service</h2>
 <form [formGroup]="dvForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label>
+      ID service
+        <br>
+        <input type="text" formControlName="maDV">
+    </label>
+</div>
+<div *ngIf="dvForm.get('maDV').invalid && dvForm.get('maDV').touched" style="color: red">
+  <span *ngIf="dvForm.get('maDV').hasError('required')">ID service is required</span>
+  <span *ngIf="dvForm.get('maDV').hasError('pattern')">Try again</span>
+</div>
     <div>
         <label>
           Name Service

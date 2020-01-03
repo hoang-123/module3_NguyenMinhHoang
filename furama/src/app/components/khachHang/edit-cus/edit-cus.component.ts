@@ -27,6 +27,7 @@ export class EditCusComponent implements OnInit {
 
   ngOnInit() {
     this.customerForm = this.fb.group({
+      maKH: ['', [Validators.required, Validators.pattern(/^(KH)[-][\d]{4}$/)]],
       hoTen: ['', [Validators.required, Validators.pattern]],
       ngaySinh: ['', [Validators.required]],
       soCM: ['', [Validators.required, Validators.minLength(9)]],
