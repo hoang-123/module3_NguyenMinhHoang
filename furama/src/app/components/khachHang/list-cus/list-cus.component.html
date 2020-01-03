@@ -1,0 +1,65 @@
+<div class="container">
+  <a class="btn btn-light" routerLink="/customer/create">Create</a><br>
+  <div>
+    <input type="text" placeholder="search" [(ngModel)]="keyword" name="keyword"/>
+    <!-- <button (click)="Search()" >Search</button> -->
+  </div>
+  <table class="table table-danger">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Date of Birth</th>
+      <th>Id Card</th>
+      <th>Phone Number</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Ation</th>
+    </tr>
+    <tr *ngFor="let cus of customerList | filter:keyword| paginate: { itemsPerPage: 5, currentPage: p }, index as i">
+      <td>
+        {{cus.id}}
+      </td>
+      <td>
+        {{cus.hoTen}}
+      </td>
+      <td>
+        {{cus.ngaySinh}}
+      </td>
+      <td>
+        {{cus.soCM}}
+      </td>
+      <td>
+        {{cus.soDT}}
+      </td>
+      <td>
+        {{cus.email}}
+      </td>
+      <td>
+        {{cus.diaChi}}
+      </td>
+      <td><button class="btn btn-success" (click)="deleteCusomer(i)">delete</button></td>
+      <td><a class="btn btn-primary" [routerLink]="['/customer/edit', cus.id]">edit</a></td>
+      <router-outlet></router-outlet>
+    </tr>
+  </table>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+  <!-- <nav>
+    <ul>
+        <li>
+            <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li *ngFor="let page of pages"><a [routerLink]="['/list']" [queryParams]="{pageNumber:page,filter:'a'}">{{page}}</a></li>
+        <li>
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+    </nav> -->
+<!-- <ng-smart-table [settings] = "settings" [source] = "customerList"></ng-smart-table> -->
+
+
+</div>

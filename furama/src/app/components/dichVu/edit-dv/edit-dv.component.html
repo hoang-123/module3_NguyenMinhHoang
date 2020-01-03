@@ -1,0 +1,77 @@
+<h2>Service</h2>
+<form [formGroup]="dvForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label>
+          Name Service
+            <br>
+            <input type="text" formControlName="tenDV">
+        </label>
+    </div>
+    <div *ngIf="dvForm.get('tenDV').invalid && dvForm.get('tenDV').touched" style="color: red">
+      <span *ngIf="dvForm.get('tenDV').hasError('required')">Name is required</span>
+      <span *ngIf="dvForm.get('tenDV').hasError('pattern')">Try again</span>
+    </div>
+    <div>
+        <label>
+          Area
+            <br>
+            <input type="text" formControlName="dienTich">
+        </label>
+    </div>
+    <div *ngIf="dvForm.get('dienTich').invalid && dvForm.get('dienTich').touched" style="color: red"></div>
+    <div>
+      <label>
+        Number Of Floor
+          <br>
+          <input type="text" formControlName="soTang">
+      </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="dvForm.get('soTang').invalid && dvForm.get('soTang').touched" style="color: red">
+  <span *ngIf="dvForm.get('soTang').hasError('required')">Number Of Floor is required</span>
+  <span *ngIf="dvForm.get('soTang').hasError('pattern')">Number Of Floor must be </span>
+  </div>
+  <div>
+    <label>
+      Number Of Max People
+        <br>
+        <input type="text" formControlName="soNguoiToiDa">
+    </label>
+</div>
+<div *ngIf="dvForm.get('soNguoiToiDa').invalid && dvForm.get('soNguoiToiDa').touched" style="color: red">
+  <span *ngIf="dvForm.get('soNguoiToiDa').hasError('required')">Number Of Max People is required</span>
+  <span *ngIf="dvForm.get('soNguoiToiDa').hasError('pattern')"></span>
+</div>
+<div>
+  <label>
+    Rents Cost
+      <br>
+      <input type="text" formControlName="chiPhiThue">
+  </label>
+</div>
+<div *ngIf="dvForm.get('chiPhiThue').invalid && dvForm.get('chiPhiThue').touched" style="color: red">
+  <span *ngIf="dvForm.get('chiPhiThue').hasError('required')">Rents Cost is required</span>
+  <span *ngIf="dvForm.get('chiPhiThue').hasError('pattern')"></span>
+</div>
+<div>
+  <label>
+    Rent Type
+      <br>
+      <input type="text" formControlName="kieuThue">
+  </label>
+</div>
+<div *ngIf="dvForm.get('kieuThue').invalid && dvForm.get('kieuThue').touched" style="color: red">
+  Rent Type is required
+</div>
+<div>
+  <label>
+    Status
+      <br>
+      <input type="text" formControlName="trangThai">
+  </label>
+</div>
+<div *ngIf="dvForm.get('trangThai').invalid && dvForm.get('trangThai').touched" style="color: red">
+  Status is required
+</div>
+    <button type="submit">Submit</button>
+</form>
+

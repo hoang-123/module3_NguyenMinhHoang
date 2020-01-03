@@ -1,0 +1,58 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "hoTen": "Hoang",
+      "ngaySinh": "12/02/1994",
+      "soCM": "197309565",
+      "soDT": "0333816012",
+      "email": "hoang@gmail.com",
+      "diaChi": "Quang Tri"
+    },
+    {
+      "hoTen": "nguyen",
+      "ngaySinh": "2019-11-07",
+      "soCM": "123456798",
+      "soDT": "01633816012",
+      "email": "adasdasdasd",
+      "diaChi": "hue",
+      "id": 2
+    },
+    {
+      "hoTen": "ssss",
+      "ngaySinh": "2019-12-31",
+      "soCM": "123467989",
+      "soDT": "+84946579007",
+      "email": "hoang@gmail.com",
+      "diaChi": "sssssss",
+      "id": 3
+    }
+  ],
+  "employee": [
+    {
+      "id": "",
+      "hoTen": "",
+      "viTri": "",
+      "trinhDo": "",
+      "boPhan": "",
+      "ngaySinh": "",
+      "soCM": "",
+      "luong": "",
+      "soDT": "",
+      "email": "",
+      "diaChi": ""
+    }
+  ],
+  "service": [
+    {
+      "id": "1",
+      "tenDV": "Villa ",
+      "dienTich": "25",
+      "soTang": "5",
+      "soNguoiToiDa": "10",
+      "chiPhiThue": "100",
+      "kieuThue": "day",
+      "trangThai": "empty"
+    }
+  ]
+}
