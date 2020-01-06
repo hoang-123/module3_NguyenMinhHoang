@@ -1,9 +1,8 @@
-<p>list-nv works!</p>
+<h2>List Contract</h2>
 <div class="container">
   <a class="btn btn-success" routerLink="/contract/create">Create</a><br>
   <div>
     <input type="text" placeholder="search" [(ngModel)]="keyword" name="keyword"/>
-    <!-- <button (click)="Search()" >Search</button> -->
   </div>
   <table class="table table-danger">
     <tr>
@@ -15,6 +14,7 @@
       <th>End Day</th>
       <th>Monney</th>
       <th>Rent Cost</th>
+      <!-- <th>Total </th> -->
       <th>Ation</th>
     </tr>
     <tr *ngFor="let c of contractList | filter:keyword| paginate: { itemsPerPage: 5, currentPage: p }, index as i">
@@ -42,6 +42,9 @@
       <td>
         {{c.tongTien}}
       </td>
+      <!-- <td>
+        {{(c.ngayHet.getDate() - c.ngayLam.getDate())*c.tongTien}}
+      </td> -->
       <td><button class="btn btn-success" (click)="deleteHD(i)">delete</button></td>
       <td><a class="btn btn-primary" [routerLink]="['/contract/edit', c.id]">edit</a></td>
       <router-outlet></router-outlet>

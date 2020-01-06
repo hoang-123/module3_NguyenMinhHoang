@@ -8,6 +8,7 @@ import { CreateDvComponent } from './components/dichVu/create-dv/create-dv.compo
 import { EditDvComponent } from './components/dichVu/edit-dv/edit-dv.component';
 import { ListNVComponent } from './components/nhanVien/list-nv/list-nv.component';
 import { ListHDComponent } from './components/hopDong/list-hd/list-hd.component';
+import { CreateHDComponent } from './components/hopDong/create-hd/create-hd.component';
 
 
 const routes: Routes = [
@@ -42,6 +43,10 @@ const routes: Routes = [
   , {
     path: 'contract/list',
     component: ListHDComponent
+  }
+  , {
+    path: 'contract/create',
+    component: CreateHDComponent
   }
 ];
 

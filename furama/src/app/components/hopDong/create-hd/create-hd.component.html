@@ -1,1 +1,83 @@
-<p>create-hd works!</p>
+<h2>Contract</h2>
+<form [formGroup]="hopdongForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label>
+      Employee
+        <br>
+        <select formControlName="employee">
+        <option *ngFor="let c of employeeList" [ngValue] = "c"> {{ c.hoTen }}</option>
+      </select>
+    </label>
+  </div>
+  <div *ngIf="hopdongForm.get('employee').invalid && hopdongForm.get('employee').touched" style="color: red">
+  <span *ngIf="hopdongForm.get('employee').hasError('required')">Employee is required</span>
+  </div>
+    <div>
+        <label>
+          Customer
+            <br>
+            <select formControlName="customer">
+              <option *ngFor="let c of customerList" [ngValue] = "c"> {{ c.hoTen }}</option>
+            </select>
+        </label>
+    </div>
+    <div *ngIf="hopdongForm.get('customer').invalid && hopdongForm.get('customer').touched" style="color: red">
+      <span *ngIf="hopdongForm.get('customer').hasError('required')">Customer is required</span>
+      <span *ngIf="hopdongForm.get('customer').hasError('pattern')">Try again</span>
+    </div>
+    <div>
+        <label>
+          Servcice
+            <br>
+            <select formControlName="service">
+              <option *ngFor="let c of serviceList" [ngValue] = "c"> {{ c.tenDV }}</option>
+            </select>
+        </label>
+    </div>
+    <div *ngIf="hopdongForm.get('service').invalid && hopdongForm.get('service').touched" style="color: red">
+    </div>
+    <div>
+      <label>
+        Day start
+          <br>
+          <input type="date" formControlName="ngayLam">
+      </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="hopdongForm.get('ngayLam').invalid && hopdongForm.get('ngayLam').touched" style="color: red">
+  <span *ngIf="hopdongForm.get('ngayLam').hasError('required')">Day start is required</span>
+  <span *ngIf="hopdongForm.get('ngayLam').hasError('pattern')"></span>
+  </div>
+  <div>
+    <label>
+      Day end
+        <br>
+        <input type="date" formControlName="ngayHet">
+    </label>
+</div>
+<div *ngIf="hopdongForm.get('ngayHet').invalid && hopdongForm.get('ngayHet').touched" style="color: red">
+  <span *ngIf="hopdongForm.get('ngayHet').hasError('required')">Day end is required</span>
+</div>
+<div>
+  <label>
+    Money
+      <br>
+      <input type="email" formControlName="tienDatCoc">
+  </label>
+</div>
+<div *ngIf="hopdongForm.get('tienDatCoc').invalid && hopdongForm.get('tienDatCoc').touched" style="color: red">
+  <span *ngIf="hopdongForm.get('tienDatCoc').hasError('required')">Email is required</span>
+  <span *ngIf="hopdongForm.get('tienDatCoc').hasError('pattern')"></span>
+</div>
+<div>
+  <label>
+    Rent Cost
+      <br>
+      <input type="text" formControlName="tongTien">
+  </label>
+</div>
+<div *ngIf="hopdongForm.get('tongTien').invalid && hopdongForm.get('tongTien').touched" style="color: red">
+  Rent Cost is required
+</div>
+    <button type="submit">Submit</button>
+</form>
+

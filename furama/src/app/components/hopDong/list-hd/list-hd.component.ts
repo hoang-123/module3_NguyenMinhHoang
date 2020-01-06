@@ -11,7 +11,7 @@ import { HopDongService } from 'src/app/service/hopDong.service';
 })
 export class ListHDComponent implements OnInit {
 
-  contract: Contract;
+  // contract: Contract;
   contractList: Contract[] = [];
   contractForm: FormGroup;
   keyword: string;
@@ -24,7 +24,7 @@ export class ListHDComponent implements OnInit {
 
 
   ngOnInit() {
-    this.hdService.getContracts().subscribe(
+    this.hdService.getAllContract().subscribe(
       next => (this.contractList = next),
       error => (this.contractList = [])
     );
