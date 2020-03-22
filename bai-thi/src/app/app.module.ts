@@ -1,16 +1,41 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {NgxPaginationModule} from 'ngx-pagination';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ListBookComponent } from './list-book/list-book.component';
+import { CreateBookComponent } from './create-book/create-book.component';
+import { EditBookComponent } from './edit-book/edit-book.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { DeleteBookComponent } from './delete-book/delete-book.component';
+import { DetalBookComponent } from './detal-book/detal-book.component';
+import { ListAppComponent } from './list-app/list-app.component';
+import { CreateAppComponent } from './create-app/create-app.component';
+import { EditAppComponent } from './edit-app/edit-app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListBookComponent,
+    CreateBookComponent,
+    EditBookComponent,
+    DeleteBookComponent,
+    DetalBookComponent,
+    ListAppComponent,
+    CreateAppComponent,
+    EditAppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgxPaginationModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,25 @@
+<div class="container">
+  <a class="btn btn-success" routerLink="/create">Create</a><br>
+  <table class="table table-danger">
+    <tr>
+      <th>ID</th>
+      <th>title</th>
+      <th>author</th>
+      <th>Ation</th>
+    </tr>
+    <tr *ngFor="let c of bookList, index as i">
+      <td>
+        {{c.id}}
+      </td>
+      <td>
+        <a [routerLink]="['/list', c.id]">{{c.title}}</a>
+      </td>
+      <td>
+        {{c.author}}
+      </td>
+      <!-- <td><button class="btn btn-success" (click)="deleteCusomer(c.id)">delete</button></td> -->
+      <td><a class="btn btn-primary" [routerLink]="['/edit', c.id]">edit</a></td>
+      <td><a class="btn btn-primary" [routerLink]="['/delete', c.id]">delete</a></td>
+    </tr>
+  </table>
+</div>

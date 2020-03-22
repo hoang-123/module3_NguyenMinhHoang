@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
-import { TimeLinesComponent } from './time-lines/time-lines.component';
-import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
-import { YoutubeComponent } from './youtube/youtube.component';
-import { DictionaryPageComponent } from './dictionary-page/dictionary-page.component';
-import { DictionaryDetailComponent } from './dictionary-detail/dictionary-detail.component';
 import { AuthGuard } from 'src/auth.guard';
+import { TimeLinesComponent } from './learn/time-lines/time-lines.component';
+import { YoutubeComponent } from './learn/youtube/youtube.component';
+import { YoutubePlayerComponent } from './learn/youtube-player/youtube-player.component';
+import { DictionaryPageComponent } from './learn/dictionary-page/dictionary-page.component';
+import { DictionaryDetailComponent } from './learn/dictionary-detail/dictionary-detail.component';
 
 
 const routes: Routes = [

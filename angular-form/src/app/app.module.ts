@@ -4,18 +4,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterFinalComponent } from './register-final/register-final.component';
-import { RegisterComponent } from './register/register.component';
-import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
-import { TodoComponent } from './todo/todo.component';
-import { TimeLinesComponent } from './time-lines/time-lines.component';
-import { YoutubeComponent } from './youtube/youtube.component';
-import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
-import { DictionaryComponent } from './dictionary/dictionary.component';
-import { DictionaryDetailComponent } from './dictionary-detail/dictionary-detail.component';
-import { DictionaryPageComponent } from './dictionary-page/dictionary-page.component';
 import { DictionaryService } from 'src/dictionary.service';
+import { LoginComponent } from './learn/login/login.component';
+import { RegisterFinalComponent } from './learn/register-final/register-final.component';
+import { RegisterComponent } from './learn/register/register.component';
+import { TemplateDrivenFormComponent } from './learn/template-driven-form/template-driven-form.component';
+import { TodoComponent } from './learn/todo/todo.component';
+import { TimeLinesComponent } from './learn/time-lines/time-lines.component';
+import { YoutubeComponent } from './learn/youtube/youtube.component';
+import { YoutubePlayerComponent } from './learn/youtube-player/youtube-player.component';
+import { DictionaryComponent } from './learn/dictionary/dictionary.component';
+import { DictionaryDetailComponent } from './learn/dictionary-detail/dictionary-detail.component';
+import { DictionaryPageComponent } from './learn/dictionary-page/dictionary-page.component';
 
 @NgModule({
   declarations: [

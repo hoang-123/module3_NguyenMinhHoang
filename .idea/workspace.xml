@@ -2,8 +2,164 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9b052db-4152-49d4-b748-3515790b7870" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-form/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-form/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-form/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/dictionary-detail/dictionary-detail.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/dictionary-detail/dictionary-detail.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/dictionary-detail/dictionary-detail.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/dictionary-detail/dictionary-detail.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/dictionary-page/dictionary-page.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/dictionary-page/dictionary-page.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/dictionary-page/dictionary-page.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/dictionary-page/dictionary-page.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/dictionary/dictionary.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/dictionary/dictionary.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/dictionary/dictionary.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/dictionary/dictionary.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/login/login.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/login/login.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/login/login.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/login/login.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/register-final/register-final.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/register-final/register-final.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/register-final/register-final.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/register-final/register-final.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/register/register.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/register/register.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/register/register.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/register/register.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/template-driven-form/template-driven-form.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/template-driven-form/template-driven-form.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/template-driven-form/template-driven-form.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/template-driven-form/template-driven-form.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/time-lines/time-lines.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/time-lines/time-lines.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/time-lines/time-lines.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/time-lines/time-lines.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/todo/todo.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/todo/todo.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/todo/todo.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/todo/todo.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/youtube-player/youtube-player.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/youtube-player/youtube-player.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/youtube-player/youtube-player.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/youtube-player/youtube-player.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/youtube/youtube.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/youtube/youtube.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/youtube/youtube.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-form/src/app/youtube/youtube.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai-thi/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/bai-thi/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai-thi/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/bai-thi/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai-thi/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/bai-thi/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai-thi/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bai-thi/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai-thi/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai-thi/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai-thi/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bai-thi/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai-thi/src/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai-thi/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai-thi/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demoServiceAngular" beforeDir="false" afterPath="$PROJECT_DIR$/demoServiceAngular" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demoServiceAngular/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demoServiceAngular/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demoServiceAngular/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/demoServiceAngular/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demoServiceAngular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/demoServiceAngular/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/.angulardoc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/dichVu/create-dv/create-dv.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/dichVu/create-dv/create-dv.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/dichVu/create-dv/create-dv.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/dichVu/create-dv/create-dv.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/dichVu/edit-dv/edit-dv.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/dichVu/edit-dv/edit-dv.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/dichVu/edit-dv/edit-dv.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/dichVu/edit-dv/edit-dv.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/dichVu/list-dv/list-dv.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/dichVu/list-dv/list-dv.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/dichVu/list-dv/list-dv.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/dichVu/list-dv/list-dv.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/hopDong/create-hd/create-hd.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/hopDong/create-hd/create-hd.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/hopDong/create-hd/create-hd.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/hopDong/create-hd/create-hd.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/hopDong/list-hd/list-hd.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/hopDong/list-hd/list-hd.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/hopDong/list-hd/list-hd.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/hopDong/list-hd/list-hd.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/khachHang/create-cus/create-cus.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/khachHang/create-cus/create-cus.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/khachHang/create-cus/create-cus.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/khachHang/create-cus/create-cus.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/khachHang/edit-cus/edit-cus.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/khachHang/edit-cus/edit-cus.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/khachHang/edit-cus/edit-cus.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/khachHang/edit-cus/edit-cus.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/khachHang/list-cus/list-cus.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/khachHang/list-cus/list-cus.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/khachHang/list-cus/list-cus.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/khachHang/list-cus/list-cus.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/nhanVien/create-nv/create-nv.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/nhanVien/create-nv/create-nv.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/nhanVien/create-nv/create-nv.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/nhanVien/create-nv/create-nv.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/nhanVien/list-nv/list-nv.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/nhanVien/list-nv/list-nv.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/nhanVien/list-nv/list-nv.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/components/nhanVien/list-nv/list-nv.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/model/customer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/model/dichVu.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/model/employee.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/model/hopdong.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/service/customer.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/service/dv.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/service/employee.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/app/service/hopDong.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/image/123.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/image/Cyber-Wukong.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/image/Draven.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/image/J4-700x393.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/image/LMHT-XG-ART-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/image/Lee-Sin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/image/Zed3-700x393.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/image/katarina.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/image/shoppingcart.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-angular" beforeDir="false" afterPath="$PROJECT_DIR$/learn-angular" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-angular/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn-angular/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-angular/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn-angular/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-angular/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn-angular/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-angular/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/learn-angular/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-angular/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/learn-angular/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-angular/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/learn-angular/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/learn-angular/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-angular/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/learn-angular/src/styles.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +175,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/taoLayoutTrongBootstrap/poly.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="459">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -80,6 +236,7 @@
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -131,7 +288,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/typescript-fundamentals-master/typescript-fundamentals-master" />
+    <property name="last_opened_file_path" value="E:/CODEGYM/Module1" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -179,11 +336,12 @@
       <workItem from="1576545740068" duration="6843000" />
       <workItem from="1576658037734" duration="376000" />
       <workItem from="1576748161318" duration="1171000" />
+      <workItem from="1582251753282" duration="54000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42662000" />
+    <option name="totallyTimeSpent" value="42716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -305,8 +463,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/taoLayoutTrongBootstrap/poly.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
