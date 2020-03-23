@@ -1,0 +1,83 @@
+.container{
+    background-color: blanchedalmond;
+}
+
+.item{
+    width: 30.33%;
+}
+
+.view-group {
+    display: -ms-flexbox;
+    display: flex;
+}
+.list-group {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.thumbnail
+{
+    margin-bottom: 30px;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.item.list-group-item
+{
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 30px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+    border: 0;
+}
+.item.list-group-item .img-event {
+    float: left;
+    width: 30%;
+}
+
+.item.list-group-item .list-group-image
+{
+    margin-right: 10px;
+}
+.item.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+    display: inline-block;
+}
+.item.list-group-item .caption
+{
+    float: left;
+    width: 70%;
+    margin: 0;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item:after
+{
+    clear: both;
+}
+
+
+
+
+.profile {
+    float: left; width: 30%; margin-right: 1%;
+}
+.profile-img img {
+    width: 100%; height: auto;
+}
+
+
+.info { display: inline-block; margin-right: 10px; color: #777; }
+.info span { font-weight: bold; }
