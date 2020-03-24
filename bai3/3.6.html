@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+<body>  
+
+<p id = "name"></p>
+<script>
+    var str = prompt("Enter a String");
+    var kq = false;
+    for(let i = 0; i < (str.length - 1); i++){
+        if(str.charAt(i) === "j" && str.charAt(i+1) === "s"){
+            kq= true;
+        }
+    }
+    document.getElementById("name").innerHTML = "KQ: " + kq;
+</script>
+
+</body>
+</html>

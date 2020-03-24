@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+<body>  
+
+    <label>Kiểm tra số credit card</label><br>
+    <input type="text" id="sdt"/>
+    <input type="button" onclick="test()" value="Check"/><br>
+
+    <br><label>Kiểm tra một giá trị có phải là số hay không?</label><br>
+    <input type="text" id="num"/>
+    <input type="button" onclick="checkNum()" value="Check"/><br>
+
+    <br><label>Kiểm tra một chuỗi có thỏa mãn định dạng email hay không?</label><br>
+    <input type="text" id="mail"/>
+    <input type="button" onclick="checkMail()" value="Check"/><br>
+
+    <br><label>Kiểm tra một chuỗi có phải là chuỗi theo cú pháp url web hay không? </label><br>
+    <input type="text" id="web"/>
+    <input type="button" onclick="checkWeb()" value="Check"/><br>
+
+    <br><label>Kiểm tra một chuỗi </label><br>
+    <input type="text" id="str"/>
+    <input type="button" onclick="checkStr()" value="Check"/><br>
+
+    <body>
+    <script>
+        var sdt = document.getElementById("sdt");
+        var pattSDT = /^[\d]{16}$/;
+        function test(){
+            alert(pattSDT.test(sdt.value));
+        }
+
+        var num = document.getElementById("num");
+        var pattSDT = /^[\d]{1,}$/;
+        function checkNum(){
+            alert(pattSDT.test(num.value));
+        }
+
+        var mail = document.getElementById("mail");
+        var pattMail = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        function checkMail(){
+            alert(pattMail.test(mail.value));
+        }
+
+        var web = document.getElementById("web");
+        var pattWeb = /^(https?:\/\/(www\.)?|(www\.))[A-z0-9_-]{3,20}(\.[A-z]{1,4}){1,2}$/;
+        function checkWeb(){
+            alert(pattWeb.test(web.value));
+        }
+
+        var str = document.getElementById("str");
+        var pattStr = /^[a-zA-Z0-9]*$/;
+        function checkStr(){
+            alert(pattStr.test(str.value));
+        }
+
+    
+    </script>
+
+</body> 
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+<body>
+
+<p id = "name"></p>
+<p id = "name2"></p>
+<script>
+    var num = prompt("Enter a Number");
+    var luckyNum = getRndInteger(10, 99);
+    var mess;
+    function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+    if(num == luckyNum){
+        mess = "Chúc mừng bạn – Bạn đã đoán đúng số máy tự sinh ra";
+    }else{
+        mess = "Rất tiếc – Chúc bạn may mắn lần sau";
+    }
+
+    
+    document.getElementById("name").innerHTML = "Lucky Number is: " + luckyNum + " Your number is: " + num;
+    document.getElementById("name2").innerHTML = mess;
+</script>
+
+</body>
+</html>

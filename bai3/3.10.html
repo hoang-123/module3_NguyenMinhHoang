@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+<body>  
+
+    <label>Nhap so A</label>
+    <input type="text" id="numA" onchange="checkNumA()"/>
+    <br><label>Nhap so B</label>
+    <input type="text" id="numB" onchange="checkNumB()"/>
+    <br><label>Nhap so C</label>
+    <input type="text" id="numC" onchange="checkNumC()"/><br><br>
+
+    <input type="radio" name="gender">
+    <label>Cộng</label><p id = "cong"></p><br>
+    <input type="radio" name="gender">
+    <label>Trừ</label><p id = "tru"></p><br>
+    <input type="radio" name="gender">
+    <label>Nhân</label><p id = "nhan"></p><br>
+    <input type="radio" name="gender">
+    <label>Chia</label><p id = "chia"></p><br><br>
+    <input type="submit" id="btn" onclick="tinh()" value="Kết Quả">
+
+<script>
+    var numA = document.getElementById("numA");
+    var numB = document.getElementById("numB");
+    var numC = document.getElementById("numC");
+    var radio = document.getElementsByName("gender")
+        var pattNum = /^[\d]{1,}$/;
+        function checkNumA(){
+            if(!pattNum.test(numA.value)){
+                alert("Nhap lai so A")
+            } 
+        }
+        function checkNumB(){
+            if(!pattNum.test(numB.value)){
+                alert("Nhap lai so B");
+            }
+        }
+        function checkNumC(){
+            if(!pattNum.test(numC.value)){
+                alert("Nhap lai so c");
+            }
+        }
+        function cong(){
+        document.getElementById("cong").innerHTML = numA.value*1 + numB.value*1;
+        }
+        function tru(){
+        document.getElementById("tru").innerHTML = numA.value*1 - numB.value;
+        }
+        function nhan(){
+        document.getElementById("nhan").innerHTML = numA.value * numB.value;
+        }
+        function chia(){
+        document.getElementById("chia").innerHTML = numA.value / numB.value;
+        }
+
+        if(pattNum.test(numA.value) && pattNum.test(numB.value) && pattNum.test(numC.value)){
+            radio[1].checked == true;
+        }
+
+        function tinh(){
+            if(radio[0].checked === true){
+                cong();
+            }
+            else if(radio[1].checked === true){
+                tru();
+            }
+            else if(radio[2].checked === true){
+                nhan();
+            }
+            else if(radio[3].checked === true){
+                chia();
+            }
+        }
+</script>
+
+</body>
+</html>

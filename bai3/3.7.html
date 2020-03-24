@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+<body>  
+
+<p id = "name"></p>
+<p id = "name2"></p>
+<p id = "name3"></p>
+<script>
+    var num = [1, 2, 5, 7, 9, 10, 2, 8, 3, 4, 7];
+    var chan = "";
+    var le = "";
+    var kq = "";
+    var a = prompt("Nhap so a");
+    var b = prompt("Nhap so b > a");
+    for(let i = 0; i < num.length; i++){
+        if(num[i]>=a && num[i]<=b){
+            kq = kq + " " + num[i];
+        }
+        if(i % 2 == 0){
+            chan = chan + " " + i;
+        }else{
+            le = le + " " + i;
+        }
+    }
+    document.getElementById("name").innerHTML = "So chan: " + chan;
+    document.getElementById("name2").innerHTML = "So le: " + le;
+    document.getElementById("name3").innerHTML = "KQ: " + kq;
+</script>
+
+</body>
+</html>

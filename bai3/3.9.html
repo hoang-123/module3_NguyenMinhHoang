@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+<body>
+    <input type="text" id="numA" onchange="checkNumA()" placeholder="Nhap so A"/><br>
+    <input type="button" onclick="cong()" value="+"/><p id = "cong"></p>
+    <input type="button" onclick="tru()" value="-"/><p id = "tru"></p>
+    <input type="button" onclick="nhan()" value="*"/><p id = "nhan"></p>
+    <input type="button" onclick="chia()" value="/"/><p id = "chia"></p>
+    <input type="text" id="numB" onchange="checkNumB()" placeholder="Nhap so B"/>
+
+<script>
+    var numA = document.getElementById("numA");
+    var numB = document.getElementById("numB");
+        var pattNum = /^[\d]{1,}$/;
+        function checkNumA(){
+            if(!pattNum.test(numA.value)){
+                alert("Nhap lai so A")
+            } 
+        }
+        function checkNumB(){
+            if(!attNum.test(numB.value)){
+                alert("Nhap lai so B");
+            }
+        }
+
+    function cong(){
+        document.getElementById("cong").innerHTML = numA.value*1 + numB.value*1;
+    }
+    function tru(){
+        document.getElementById("tru").innerHTML = numA.value*1 - numB.value;
+    }
+    function nhan(){
+        document.getElementById("nhan").innerHTML = numA.value * numB.value;
+    }
+    function chia(){
+        document.getElementById("chia").innerHTML = numA.value / numB.value;
+    }
+
+</script>
+
+</body>
+</html>
