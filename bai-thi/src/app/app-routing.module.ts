@@ -6,30 +6,29 @@ import { CreateBookComponent } from './create-book/create-book.component';
 import { DeleteBookComponent } from './delete-book/delete-book.component';
 import { DetalBookComponent } from './detal-book/detal-book.component';
 import { ListAppComponent } from './list-app/list-app.component';
-import { CreateAppComponent } from './create-app/create-app.component';
 import { EditAppComponent } from './edit-app/edit-app.component';
 
 
 const routes: Routes = [
+  // { path: '', redirectTo: '/list', pathMatch: 'full' },
+  // { path: '**', component: ListBookComponent },
   {
-    path: 'list',
-    component: ListAppComponent
+    path: 'list', component: ListAppComponent,
+    // children: [
+    //   {path: 'detail/:id', component: EditAppComponent},
+    // ]
   },
   {
-    path: 'create',
-    component: CreateAppComponent
-  }
-  , {
-    path: 'edit/:id',
-    component: EditAppComponent
-  }
-  // , {
-  //   path: 'delete/:id',
-  //   component: DeleteBookComponent
-  // }
-  // , {
-  //   path: 'list/:id',
-  //   component: DetalBookComponent
+    path: 'edit/:id', component: EditAppComponent,
+  },
+  // {
+  //   path: 'book', component: ListBookComponent,
+  //   children: [
+  //     {path: 'create', component: CreateBookComponent},
+  //     {path: 'delete/:id', component: DeleteBookComponent},
+  //     {path: 'edit/:id', component: EditBookComponent},
+  //     {path: 'detail/:id', component: DetalBookComponent}
+  //   ]
   // }
 ];
 

@@ -1,19 +1,19 @@
 
-<h2>Edit Awesome</h2>
-<form [formGroup]="aweForm" (ngSubmit)="onSubmit()">
+<h2>Detail Awesome</h2>
+<form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
   <div>
     <label>
-      Tag
+      <b>Link</b>
         <br>
-        <input type="text" formControlName="url">
+      <input type="text" formControlName="url">
     </label>
 </div>
     <div>
       <label>
-        Description
+        <b>Description</b>
           <br>
           <input type="text" formControlName="descriptions">
       </label>
   </div>
-    <button type="submit">Submit</button>
+    <button type="submit">Back home</button>
 </form>

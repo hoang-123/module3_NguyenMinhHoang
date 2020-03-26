@@ -1,13 +1,9 @@
 import { Awesome } from './../awesome.model';
 import { AwesomeService } from './../awesome.service';
 import { Component, OnInit } from '@angular/core';
-import {
-  FormGroup,
-  FormControl,
-  FormBuilder,
-  Validators
-} from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { FormGroup, FormBuilder } from '@angular/forms';
+
 
 @Component({
   selector: 'app-edit-app',
@@ -17,46 +13,44 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class EditAppComponent implements OnInit {
 
   awe: Awesome;
-  aweForm: FormGroup;
+  bookForm: FormGroup;
+
   constructor(
     private aweService: AwesomeService,
-    private fb: FormBuilder,
+    private route: ActivatedRoute,
     private router: Router,
-    private route: ActivatedRoute
+    private fb: FormBuilder,
   ) {}
 
   ngOnInit() {
-    this.aweForm = this.fb.group({
+    // const id = +this.route.snapshot.paramMap.get('id');
+    // this.aweService.getOne(id).subscribe(
+    //     next => (this.awe = next),
+    // );
+    this.bookForm = this.fb.group({
       url: [''],
-      descriptions: ['']
+      descriptions: [''],
+      id: ['']
     });
     const id = +this.route.snapshot.paramMap.get('id');
-    this.aweService.getAwesomeById(id).subscribe(
+    this.aweService.getOne(id).subscribe(
       next => {
         this.awe = next;
-        this.aweForm.patchValue(this.awe);
+        this.bookForm.patchValue(this.awe);
       },
       error => {
         console.log(error);
         this.awe = null;
       }
     );
-  }
-  onSubmit() {
-    if (this.aweForm.valid) {
-        const { value } = this.aweForm;
-        const data = {
-            ...this.awe,
-            ...value
-        };
-        this.aweService.updateAwesome(data).subscribe(
-            next => {
-                this.router.navigate(['list']);
-            },
-            error => console.log(error)
-        );
-    }
+
 }
-
-
+  onSubmit() {
+     this.aweService.update(this.bookForm.value).subscribe(
+      next => {
+          this.router.navigate(['/list']);
+      },
+      error => console.log(error)
+      );
+  }
 }

@@ -1,7 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgxPaginationModule} from 'ngx-pagination';
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,8 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { DeleteBookComponent } from './delete-book/delete-book.component';
 import { DetalBookComponent } from './detal-book/detal-book.component';
 import { ListAppComponent } from './list-app/list-app.component';
-import { CreateAppComponent } from './create-app/create-app.component';
 import { EditAppComponent } from './edit-app/edit-app.component';
+import { CreateAppComponent } from './create-app/create-app.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +23,8 @@ import { EditAppComponent } from './edit-app/edit-app.component';
     DeleteBookComponent,
     DetalBookComponent,
     ListAppComponent,
-    CreateAppComponent,
-    EditAppComponent
+    EditAppComponent,
+    CreateAppComponent
   ],
   imports: [
     BrowserModule,
@@ -34,8 +32,6 @@ import { EditAppComponent } from './edit-app/edit-app.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxPaginationModule,
-    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

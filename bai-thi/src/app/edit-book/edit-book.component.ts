@@ -45,19 +45,12 @@ export class EditBookComponent implements OnInit {
     );
   }
   onSubmit() {
-    if (this.bookForm.valid) {
-        const { value } = this.bookForm;
-        const data = {
-            ...this.book,
-            ...value
-        };
-        this.bookService.updateBook(data).subscribe(
+        this.bookService.updateBook(this.bookForm.value).subscribe(
             next => {
-                this.router.navigate(['list']);
+                this.router.navigate(['book/list']);
             },
             error => console.log(error)
         );
     }
-}
 
 }

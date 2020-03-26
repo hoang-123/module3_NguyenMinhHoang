@@ -1,6 +1,5 @@
-<p>create-app works!</p>
 <h2>Awesome</h2>
-<form [formGroup]="aweForm" (ngSubmit)="onSubmit()">
+<form [formGroup]="aweForm" (ngSubmit)="onSubmit(aweForm.value)">
   <div>
     <label>
       Tag

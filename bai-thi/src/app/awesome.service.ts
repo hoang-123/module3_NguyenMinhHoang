@@ -1,43 +1,33 @@
 import { Awesome } from './awesome.model';
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { Observable, of } from 'rxjs';
+import { some } from './fake-aap';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class AwesomeService {
 
-  constructor(private http: HttpClient) { }
+  constructor() {}
 
-private baseUrl = 'http://localhost:3000/awesomes';
+  getSome(): Observable<Awesome[]> {
+    return of(some);
+  }
 
-getAllAwesomes(): Observable<any> {
-  return this.http.get(this.baseUrl);
-}
-getAwesomes(count = 10): Observable<Awesome[]> {
-  return this.http.get<Awesome[]>(this.baseUrl).pipe(
-      map(response => response.filter((awesome, i) => i < count))
-  );
-}
-getAwesomeById(id: number): Observable<Awesome> {
-  return this.http.get<Awesome>(`${this.baseUrl}/${id}`);
-}
+  getOne(id: number): Observable<Awesome> {
+    return of(some[id - 1]);
+  }
+  update(a: Awesome): Observable<Awesome[]> {
+    return of(some.fill(a));
+  }
 
-createAwesome(cus: Partial<Awesome>): Observable<Awesome> {
-  return this.http.post<Awesome>(this.baseUrl, cus);
-}
+  // addOne(some: Awesome): Observable<Awesome[]> {
+  //   return of(this.some.push());
+  // }
 
-deleteAwe(id: number): Observable<any> {
-  return this.http.delete(`${this.baseUrl}/${id}`);
-}
-
-updateAwesome(awesome: Awesome): Observable<Awesome> {
-  return this.http.put<Awesome>(`${this.baseUrl}/${awesome.id}`, awesome);
-}
-// deleteAwesome(awesome: Awesome): Observable<any> {
-//   return this.http.delete(`${this.baseUrl}/${awesome.id}`);
-// }
+  deleteOne(id: number): Observable<Awesome> {
+    return of(some.shift());
+  }
 
 }

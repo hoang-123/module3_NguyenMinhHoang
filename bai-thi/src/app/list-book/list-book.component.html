@@ -1,5 +1,6 @@
 <div class="container">
-  <a class="btn btn-success" routerLink="/create">Create</a><br>
+  <h1>Book Page</h1>
+  <a class="btn btn-success" routerLink="/book/create">Create Book</a><br>
   <table class="table table-danger">
     <tr>
       <th>ID</th>
@@ -12,14 +13,13 @@
         {{c.id}}
       </td>
       <td>
-        <a [routerLink]="['/list', c.id]">{{c.title}}</a>
+        <a [routerLink]="['/book/detail', c.id]">{{c.title}}</a>
       </td>
       <td>
         {{c.author}}
       </td>
-      <!-- <td><button class="btn btn-success" (click)="deleteCusomer(c.id)">delete</button></td> -->
-      <td><a class="btn btn-primary" [routerLink]="['/edit', c.id]">edit</a></td>
-      <td><a class="btn btn-primary" [routerLink]="['/delete', c.id]">delete</a></td>
+      <td><a class="btn btn-primary" [routerLink]="['/book/edit', c.id]">edit</a></td>
+      <td><a class="btn btn-primary" [routerLink]="['/book/delete', c.id]">delete</a></td>
     </tr>
   </table>
 </div>

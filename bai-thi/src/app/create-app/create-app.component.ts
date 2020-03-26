@@ -5,7 +5,6 @@ import {
   FormGroup,
   FormControl,
   FormBuilder,
-  Validators
 } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -17,7 +16,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class CreateAppComponent implements OnInit {
 
-  awe: Awesome;
+  awe: Awesome = new Awesome();
   aweForm: FormGroup;
   constructor(
     private aweService: AwesomeService,
@@ -28,24 +27,21 @@ export class CreateAppComponent implements OnInit {
 
   ngOnInit() {
     this.aweForm = this.fb.group({
+      id: [''],
       url: [''],
       descriptions: ['']
     });
   }
-  onSubmit() {
-    if (this.aweForm.valid) {
-        const { value } = this.aweForm;
-        const data = {
-            ...this.awe,
-            ...value
-        };
-        this.aweService.createAwesome(data).subscribe(
-            next => {
-                this.router.navigate(['list']);
-            },
-            error => console.log(error)
-        );
-    }
-}
+//   onSubmit(form) {
+//     this.awe.id = 5;
+//     this.awe.url = form.url;
+//     this.awe.descriptions = form.descriptions;
+//     console.log(this.awe);
+//     this.aweService.addOne(this.awe).subscribe(
+//             next => {
+//               this.router.navigate(['list']);
+//             },
+//         );
+// }
 
 }

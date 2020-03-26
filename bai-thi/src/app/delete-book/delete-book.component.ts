@@ -4,8 +4,7 @@ import { Book } from './../book.model';
 import {
   FormGroup,
   FormControl,
-  FormBuilder,
-  Validators
+  FormBuilder
 } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -44,19 +43,17 @@ export class DeleteBookComponent implements OnInit {
     );
   }
   onSubmit() {
-    if (this.bookForm.valid) {
-        const { value } = this.bookForm;
-        const data = {
-            ...this.book,
-            ...value
-        };
-        this.bookService.deleteBook(data).subscribe(
+        // const { value } = this.bookForm;
+        // const data = {
+        //     ...this.book,
+        //     ...value
+        // };
+        this.bookService.deleteBook(this.bookForm.value).subscribe(
             next => {
-                this.router.navigate(['list']);
+                this.router.navigate(['book']);
             },
             error => console.log(error)
         );
-    }
 }
 
 }

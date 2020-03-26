@@ -20,7 +20,7 @@ export class ListAppComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.aweService.getAllAwesomes().subscribe(
+    this.aweService.getSome().subscribe(
       next => (this.aweList = next),
       error => (this.aweList = [])
     );
@@ -28,7 +28,7 @@ export class ListAppComponent implements OnInit {
   deleteAwe(i) {
     if (confirm('Are you sure delete this Awesome ' + name + '?')) {
     const awe = this.aweList[i];
-    this.aweService.deleteAwe(awe.id).subscribe(() => {
+    this.aweService.deleteOne(awe.id).subscribe(() => {
         this.aweList = this.aweList.filter(t => t.id !== awe.id);
     });
   }

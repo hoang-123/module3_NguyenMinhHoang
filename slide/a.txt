@@ -1,0 +1,65 @@
+- Angular Router 
+    • Setting up the router
+    • Navigation
+    • Child routes
+    • Routing params
+    • Lazy loading
+    • Guards and hooks
+
+Với các phần các bạn phải tìm hiểu và trả lời được cho anh 3 câu hỏi : WHAT, WHEN & HOW.
+
+	const routes: Routes = [
+  		{ path: '', redirect: 'phones', pathMatch: 'full' },
+  		{ path: 'phones', component: ItemsListComponent },
+  		{ path: 'phones/:id/:name', component: ItemFormComponent },
+		];
+ngOnInit() {
+    this.route.paramMap.subscribe((params: ParamMap) => {
+      const id = params.get('id');
+      this.name = params.get('name');
+      this.phoneNumber = params.get('phoneNumber');
+    });
+  }
+
+npm install -g json-server
+json-server --watch db.json
+
+ng g s auth
+ong g guard auth
+
+
+const routes: Routes = [
+{
+path: 'dictionary',
+component: DictionaryPageComponent,
+children: [
+{
+path: ':key',
+component: DictionaryDetailComponent,
+canActivate: [AuthGuard]
+} ]
+}
+];
+
+
+Lazy-load route
+• Tạo mới NgModule và component như sau:
+• ng g m blog --routing
+• ng g c blog/blog-list
+
+ Mỗi giai đoạn trong vòng đời của component đều tương ứng với 1 method nào đó trong component class, ta gọi nó là các hooks.
+
+
+Vòng đời của một component xảy ra khi mình tạo , cập nhật , xoá các phần tử trên angular
+Khi một component được tạo ra và phá huỷ đi. Angular sẽ tạo ra các vòng đời theo thứ tự sau. Dự vào các thứ tự này ta có thể hook vào và thay đổi
+ngOnChanges(): Xảy ra khi Angular cập nhật giá trị hoặc binding giá trị cho phần tử. Nó gọi trước hàm ngOnInit();
+ngOnInit() : Xảy ra khi mình khởi tạo các component và sau khi Angular hiện thị data binding cho các component. Được gọi 1 lần sau khi ngOnChanges được gọi
+ngDoCheck() : Xảy ra khi có sự thay đổi được phát hiện trên các component.
+ngAfterContentInit() :
+
+ngAfterContentInit: Sau khi angular xuất content ra view
+ngAfterContentChecked: Sau khi Angular kiểm tra sự ràng buộc content để xuất content ra view
+ngAfterViewInit: Sau khi Angular tạo ra view của componet
+ngAfterViewChecked: Sau khi Angular kiểm tra ràng buộc dữ liệu trên view
+
+
