@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+      .button {
+  background-color: rgb(86, 9, 94);
+  border: 2px solid rgb(224, 233, 224);
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+.card{
+    border: outset 2px;
+}
+  </style>
+</head>
+<body>
+ 
+<div class="container">
+    <div class="row">
+        <div class="col-4">  
+  <h2 >Wider</h2><br><br>
+  <div class="card" style="width:90%; text-align: center;">
+    <img class="card-img-top" src="https://picsum.photos/id/1084/536/354?grayscale" alt="Card image" style="width:110%; margin: 0% -5% 0% -5%; border-radius: 5%;">
+    <div class="card-body">
+      <h4 class="card-title">John Doe</h4>
+      <h6 style="color: rgb(31, 143, 218);">Graffiti Artist</h6>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+            <a class="social-icon text-xs-center" target="_blank" href="#">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="social-icon text-xs-center" target="_blank" href="#">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="social-icon text-xs-center" target="_blank" href="#">
+                <i class="fa fa-google"></i>
+            </a>
+        </li>
+    </ul>
+    </div>
+    
+  </div>
+</div>
+<div class="col-4">  
+    <h2>Narrower</h2><br><br>
+    <div class="card" style="width:100%">
+      <img class="card-img-top" src="https://picsum.photos/400/233" alt="Card image" style="width:90%; margin: -5% 5% 0% 5%; border-radius: 5%;">
+      <div class="card-body">
+        <h6 style="color: rgb(236, 56, 24);">Culinary</h6>
+        <h4 class="card-title">Cheat day inspirations</h4>
+        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        <a href="#" class="button">BUTTON</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-4">  
+    <h2>Regular</h2><br><br>
+    <div class="card" style="width:100%; text-align: center;">
+      <img class="card-img-top" src="http://lorempixel.com/300/200/nightlife/4" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">John Doe</h4>
+        <h6 style="color: rgb(8, 40, 129);">Wed Developer</h6>
+        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+	    <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+	    <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+</div>
+
+</body>
+</html>

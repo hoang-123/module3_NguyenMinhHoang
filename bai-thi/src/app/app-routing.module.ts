@@ -14,13 +14,13 @@ const routes: Routes = [
   // { path: '**', component: ListBookComponent },
   {
     path: 'list', component: ListAppComponent,
-    // children: [
-    //   {path: 'detail/:id', component: EditAppComponent},
-    // ]
+    children: [
+      {path: 'edit/:id', component: EditAppComponent},
+    ]
   },
-  {
-    path: 'edit/:id', component: EditAppComponent,
-  },
+  // {
+  //   path: 'list/edit/:id', component: EditAppComponent,
+  // },
   // {
   //   path: 'book', component: ListBookComponent,
   //   children: [
