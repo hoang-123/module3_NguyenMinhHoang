@@ -1,0 +1,77 @@
+{
+  "khachHang": [
+    {
+      "id": 1,
+      "maKH": "KH-0001",
+      "tenKH": "Hoang",
+      "soDT": "0333816012",
+      "email": "hoang@gmail.com",
+      "diaChi": "Quang Tri"
+    }
+  ],
+
+  "may": [
+    {
+      "id": "1",
+      "maMay": "M-1234",
+      "viTri": "15",
+      "trangThai": "Dang hoat dong"
+    }
+  ],
+
+  "dichVu": [
+	{
+      "id": 1,
+      "maDV": "DV-0001",
+      "tenDV": "Do an",
+      "donViTinh": "VND",
+   	"donGia": 5000
+    }],
+
+  "suDungMay": [
+    {
+	"id": 1,
+      "khachHang":{
+      "id": 1,
+      "maKH": "KH-0001",
+      "tenKH": "Hoang",
+      "soDT": "0333816012",
+      "email": "hoang@gmail.com",
+      "diaChi": "Quang Tri"
+    },
+      "may": {
+        "id": 1,
+      "maMay": "M-1234",
+      "viTri": "15",
+      "trangThai": "Dang hoat dong"
+      },
+      "ngayBatDau": "2019-12-31",
+      "gioBatDau": "5",
+      "thoiGianSD": "22"
+    }
+  ],
+
+ "suDungDV": [
+    {
+	"id": 1,
+      "khachHang":{
+      "id": 1,
+      "maKH": "KH-0001",
+      "tenKH": "Hoang",
+      "soDT": "0333816012",
+      "email": "hoang@gmail.com",
+      "diaChi": "Quang Tri"
+    },
+      "dichVu": {
+        "id": 1,
+      "maDV": "DV-0001",
+      "tenDV": "Do an",
+      "donViTinh": "VND",
+   	"donGia": 5000
+      },
+      "ngaySD": "2019-12-31",
+      "gioSD": "5",
+      "soLuong": "22"
+    }
+  ]
+}
